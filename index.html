@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .main-grid{
+            
+        }
+        .image-1 {
+            display: flex;
+            height: 60vh;
+            background-size: cover;
+            width: 100%;
+            background-image: url("https://wallpapers.com/images/hd/god-of-war-boss-encounter-e2ueu824n3g19qkh.jpg");
+        }
+        .card img{
+            border-top-left-radius: 5px;      
+            border-top-right-radius: 5px;  
+        }
+        .carousel{
+            position: relative;
+            top: 50px;
+            margin-bottom: 60px;
+        }
+        .features{
+            border: 2px solid;
+            border-radius: 5px;
+            box-shadow: 2px 2px 15px white;
+        }
+        body{
+            opacity: 0.95;
+            background-color: rgb(14, 13, 13);
+        }
+         /* services */
+        .service-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-icon {
+            font-size: 3rem;
+            color: #007bff;
+        }
+        .service-text {
+            padding: 15px;
+        }
+        .service-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .service-description {
+            color: #6c757d;
+        }
+        /* follow us*/
+        .follow-us-section {
+            /* background-color: #f8f9fa; */
+            padding: 40px 0;
+            text-align: center;
+        }
+        .follow-us-section h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #343a40;
+        }
+        .follow-us-section p {
+            margin-bottom: 30px;
+            color: #6c757d;
+        }
+        .social-icons a {
+            color: #007bff;
+            font-size: 2rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+        <!-- Navbar content -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Game Zone
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupport">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupport">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#carouselExample" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#list" class="nav-link">List</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#main-feature" class="dropdown-item">Features</a></li>
+                            <li><a href="#main-service" class="dropdown-item">Services</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a href="#main-follow" class="dropdown-item">Follow Us</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input type="text" class="form-control me-2" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--carousel-->
+    <div class="carousel slide" data-bs-ride="carousel" id="carouselExample">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://wallpapers.com/images/hd/god-of-war-boss-encounter-e2ueu824n3g19qkh.jpg" alt="game-1"
+                    class="image-1 d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>God of War</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpapercg.com/download/gta-6-3840x2160-19573.jpg" alt="game-1"
+                    class="image-1 d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>GTA-6</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://c4.wallpaperflare.com/wallpaper/935/794/336/spider-man-spider-man-ps4-marvel-comics-wallpaper-preview.jpg"
+                    alt="game-1" class="image-1 d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>SpiderMan</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images2.alphacoders.com/597/597965.jpg" alt="game-1" class="image-1 d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Call of Duty</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpapers.com/images/featured/minecraft-background-cfljc4haleghnajo.jpg" alt="game-1"
+                    class="image-1 d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Minicraft</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!--Grid -->
+    <div id="list">
+        <h3 class="text-warning m-2" >List of Games</h3>
+        <div class="container-fluid main-grid" >
+            <div class="row">
+                <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202404/2619/665687cf79609d1dca052d109d656cdec97d5565eb84cd2a.png?w=1920&thumb=false"
+                            alt="img-1" class="w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Alien: Rogue Incursion</h5>
+                            <p class="card-text">Alien: Rogue Incursion is an all-new single-player, action-horror VR game
+                                featuring an original story that fully immerses players within the terrors of the Alien
+                                universe.</p>
+                            <a href="https://store.playstation.com/en-in/product/EP2147-PPSA06448_00-0237236170183950"
+                                class="btn btn-primary" target="_blank">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202404/1815/32504927f5eb4958e5043390992e3d78ce3be9a0f83e5c62.jpg?w=1920&thumb=false"
+                            alt="" class="w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Assassin’s Creed Shadows</h5>
+                            <p class="card-text"> Switch seamlessly between two unlikely allies as you discover their common
+                                destiny.
+                                Master complementary playstyles, create your shinobi league, customize.
+                            </p>
+                            <a href="https://store.playstation.com/en-in/product/EP0001-PPSA20397_00-GAME000000000000"
+                                class="btn btn-primary" target="_blank">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202406/2412/a149f166c628006d9a741d75f33df5463d28b6e24ef31fd6.png?w=1920&thumb=false"
+                            alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Farming Simulator 25</h5>
+                            <p class="card-text">Farming Simulator 25 floods the fields with a host of new machines,
+                                gameplay features, visual upgrades, and even fresh water to grow rice - adding even more
+                                agricultural.</p>
+                            <a href="https://store.playstation.com/en-in/product/EP4399-PPSA19644_00-FARMSIMULAT25PS5"
+                                class="btn btn-primary" target="_blank">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202405/2921/05a08ddb076656e71324f6d578bdbaa16c8925ab01dc3046.png?w=1920&thumb=false"
+                            alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Call of Duty: Black Ops 6</h5>
+                            <p class="card-text">Developed by Treyarch and Raven, Black Ops 6 is a spy action thriller set
+                                in the early 90s, a period of transition and upheaval in global politics, characterised.</p>
+                            <a href="https://store.playstation.com/en-in/product/EP0002-PPSA07950_00-CODBO6CROSSGEN01"
+                                class="btn btn-primary" target="_blank">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202406/1308/2b44c380b31e1a186cac18adfd032d838fb0b54e12ef38be.png?w=1920&thumb=false"
+                            alt="img-1" class="w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">A Quiet Place: The Road Ahead</h5>
+                            <p class="card-text">The Road Ahead is a single-player horror adventure game inspired by the
+                                critically acclaimed blockbuster movie franchise that highlights a unique survivor story
+                                after.</p>
+                            <a href="https://store.playstation.com/en-in/product/EP6853-PPSA19007_00-AQPBASEGAME00000"
+                                class="btn btn-primary" target="_blank">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202405/2401/36a4567d4d561b61f3d2d3745f0ef96d5693181c9f282682.jpg?w=1920&thumb=false"
+                            alt="" class="w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">NEW WORLD: AETERNUM</h5>
+                            <p class="card-text"> Experience a thrilling action RPG set on the supernatural island of
+                                Aeternum. As a shipwrecked explorer who washes ashore on the mysterious island, forge your
+                                destiny.
+                            </p>
+                            <a href="https://store.playstation.com/en-in/product/EP0001-PPSA20397_00-GAME000000000000"
+                                class="btn btn-primary" target="_blank">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202405/2216/d617f02b7966f1d8d22f126b99dad79951bab83c0d0d19b7.jpg?w=1920&thumb=false"
+                            alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">DRAGON BALL: Sparking! ZERO</h5>
+                            <p class="card-text">DRAGON BALL: Sparking! ZERO takes the legendary gameplay of the Budokai
+                                Tenkaichi series and raises it to whole new levels. Learn and master.</p>
+                            <a href="https://store.playstation.com/en-in/product/EP0700-PPSA15210_00-DRAGONBALLSPARK0"
+                                class="btn btn-primary" target="_blank">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202403/1208/757f94cb32a488e87e7592e2aa88893751b1e8194cb250e1.jpg?w=1920&thumb=false"
+                            alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Shadows of the Damned</h5>
+                            <p class="card-text">Kick some demon tail as Garcia Hotspur on one devil of a ride. The flames
+                                of hell will feel frigid compared to the hot-blooded Garcia on his quest to get his girl
+                                back.</p>
+                            <a href="https://store.playstation.com/en-in/product/EP7562-PPSA17859_00-K1GHM00000000002"
+                                class="btn btn-primary" target="_blank">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Features-->
+    <div class=" main-feature text-white-50 p-4" id="main-feature">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="p-4 text-center">
+                        <h4>PS4 Pro Features</h4>
+                        <p>How your games will be enhanced by the world's most powerful console</p>
+                    </div>
+                </div>
+                <!-- <div class="d-flex flex-row justify-content-around ms-5 me-5 gap-4"> -->
+                <div class="col-12 col-lg-4 col-md-6 mb-5 ">
+                    <div style="width: 20rem;" class="features">
+                        <div>
+                            <img src="https://hgworld.in/wp-content/uploads/2020/10/pro.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="p-4">
+                            <h5>PS4 Pro HD</h5>
+                            <p>Game resolution ranges from 1080p to 1440p on an HD TV</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 mb-5">
+                    <div style="width: 20rem;" class="features">
+                        <div>
+                            <img src="https://i.pinimg.com/originals/ef/fb/a8/effba89f77965834f4374cfb3750c530.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="p-4">
+                            <h5>4K gaming</h5>
+                            <p>Enhanced upscaling techniques can increase game resolutions to approach 4K</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-5">
+                    <div style="width: 20rem;" class="features">
+                        <div>
+                            <img src="https://cdn.wccftech.com/wp-content/uploads/2016/09/Horizon-Zero-Dawn-4K-1-scaled.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="p-4">
+                            <h5>Native 4K</h5>
+                            <p>PS4 Pro allows select games to output a native 2160p resolution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--services-->
+    <div class="container-fluid p-4" id="main-service">
+        <div class="text-center text-success mb-5">
+            <h2>Our Services</h2>
+            <p>Explore the top services we offer for your PlayStation 4 gaming experience.</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h5 class="service-title">Game Rentals</h5>
+                        <p class="service-description">Rent your favorite PS4 games with flexible rental periods and easy returns.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h5 class="service-title">Game Guides</h5>
+                        <p class="service-description">Access detailed guides and walkthroughs to help you master your games.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h5 class="service-title">Customer Support</h5>
+                        <p class="service-description">Get 24/7 support for any issues or questions about your gaming experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Follow us-->
+
+    <div class="follow-us-section " id="main-follow">
+        <div class="container-fluid ">
+            <h2 class="text-white">Follow Us</h2>
+            <p>Stay updated with our latest news and offers by following us on social media!</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FontAwesome CDN for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
